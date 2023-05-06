@@ -38,6 +38,7 @@ p {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .tools .tools-list ul li {
   box-sizing: border-box;
