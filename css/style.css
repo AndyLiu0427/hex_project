@@ -4,7 +4,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
@@ -27,7 +27,6 @@ p {
   margin: 0;
 }
 .tools p, .tools span {
-  font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
@@ -38,7 +37,7 @@ p {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .tools .tools-list ul li {
   box-sizing: border-box;
@@ -48,63 +47,62 @@ p {
   max-width: 416px;
   width: 100%;
   margin-bottom: 24px;
-  margin-left: 12px;
-  margin-right: 12px;
 }
-.tools .tools-list ul li .tools-list-card-img {
+.tools .tools-list-card-img {
   width: 100%;
   border-radius: 15px 15px 0 0;
   overflow: hidden;
 }
-.tools .tools-list ul li .tools-list-card-img img {
+.tools .tools-list-card-img img {
   width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.28s ease-in-out 0s;
 }
-.tools .tools-list ul li .tools-list-card-img:hover img {
+.tools .tools-list-card-img:hover img {
   transform: scale(1.2);
 }
-.tools .tools-list ul li .tools-list-card-text {
+.tools .tools-list-card-text {
   display: flex;
   flex-direction: column;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-title {
+.tools .tools-list-card-text .tools-list-card-title {
   border-bottom: 1px solid #F2F2F2;
   padding: 20px 32px;
   text-align: left;
   word-break: break-all;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-title h2 {
+.tools .tools-list-card-text .tools-list-card-title h3 {
   font-size: 20px;
+  margin-top: 0;
   margin-bottom: 12px;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-title p {
+.tools .tools-list-card-text .tools-list-card-title p {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #525252;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-desc-ai {
+.tools .tools-list-card-text .tools-list-card-desc-ai {
   padding: 20px 32px;
   border-bottom: 1px solid #F2F2F2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-desc-ai p {
+.tools .tools-list-card-text .tools-list-card-desc-ai p {
   font-weight: 700;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-desc-tag {
+.tools .tools-list-card-text .tools-list-card-desc-tag {
   padding: 20px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-desc-tag a {
+.tools .tools-list-card-text .tools-list-card-desc-tag a {
   color: #020202;
 }
-.tools .tools-list ul li .tools-list-card-text .tools-list-card-desc-tag a span {
+.tools .tools-list-card-text .tools-list-card-desc-tag a span {
   font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
