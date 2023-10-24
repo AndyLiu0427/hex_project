@@ -19,13 +19,34 @@ h1 {
 }
 h1, h2, h3, h4, p, ul, li, a {
   margin: 0;
+  padding: 0;
 }
 li {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+  color: white;
 }
+
+// ----- common -----
+.primary-btn {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 20px 40px;
+  width: max-content;
+}
+
+.logo {
+  width: 245px;
+  height: 40px;
+}
+// ----- common -----
 
 .header {
   display: flex;
@@ -34,9 +55,7 @@ a {
   border-bottom: 1px solid #FFFFFF;
   padding: 20px 0;
   margin-bottom: 40px;
-  img {
-    width: 245px;
-  }
+
   .menu {
     ul {
       display: flex;
@@ -53,23 +72,13 @@ a {
 }
 
 .banner {
+  margin-bottom: 160px;
   h1 {
     font-weight: 900;
     font-size: 120px;
     line-height: 120%;
     margin-bottom: 40px;
     color: white;
-  }
-  a {
-    display: block;
-    border: 1px solid #FFFFFF;
-    border-radius: 16px;
-    color: #FFFFFF;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 120%;
-    padding: 20px 40px;
-    width: max-content;
   }
 }
 
@@ -220,7 +229,7 @@ a {
   text-align: center;
   background: white;
   border-radius: 160px;
-  padding: 160px 312px;
+  margin-bottom: 80px;
 
   h2 {
     font-weight: 900;
@@ -311,6 +320,77 @@ a {
         span {
           font-size: 18px;
         }
+      }
+    }
+  }
+}
+
+.callToAction {
+  text-align: center;
+  padding: 80px;
+  margin-bottom: 80px;
+  h2 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+}
+
+.footer {
+  color: #FFFFFF;
+  .sitemap {
+    border-top: 1px solid #FFFFFF;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    li {
+      font-weight: 900;
+      font-size: 80px;
+      line-height: 120%;
+
+      &:last-child {
+        margin-top: 8px;
+      }
+    }
+  }
+  .footer-menu {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 32px 0;
+    .copyright {
+      margin-right: 100px;
+    }
+    .social {
+      ul {
+        display: flex;
+      }
+      li {
+        margin-right: 20px;
+      }
+      margin-right: auto;
+    }
+    .top {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 768px) {
+      .copyright,
+      .top {
+        margin-right: 0;
+        width: 50%;
+      }
+
+      .social {
+        width: 100%;
+        order: 3;
       }
     }
   }

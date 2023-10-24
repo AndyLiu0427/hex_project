@@ -16,6 +16,7 @@ h1 {
 
 h1, h2, h3, h4, p, ul, li, a {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -24,6 +25,25 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+.primary-btn {
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 20px 40px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.logo {
+  width: 245px;
+  height: 40px;
 }
 
 .header {
@@ -33,9 +53,6 @@ a {
   border-bottom: 1px solid #FFFFFF;
   padding: 20px 0;
   margin-bottom: 40px;
-}
-.header img {
-  width: 245px;
 }
 .header .menu ul {
   display: flex;
@@ -49,24 +66,15 @@ a {
   color: #FFFFFF;
 }
 
+.banner {
+  margin-bottom: 160px;
+}
 .banner h1 {
   font-weight: 900;
   font-size: 120px;
   line-height: 120%;
   margin-bottom: 40px;
   color: white;
-}
-.banner a {
-  display: block;
-  border: 1px solid #FFFFFF;
-  border-radius: 16px;
-  color: #FFFFFF;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 120%;
-  padding: 20px 40px;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .service {
@@ -209,7 +217,7 @@ a {
   text-align: center;
   background: white;
   border-radius: 160px;
-  padding: 160px 312px;
+  margin-bottom: 80px;
 }
 .tools h2 {
   font-weight: 900;
@@ -297,4 +305,72 @@ a {
 }
 .tools .tools-list-card-text .tools-list-card-desc-tag a span {
   font-size: 18px;
+}
+
+.callToAction {
+  text-align: center;
+  padding: 80px;
+  margin-bottom: 80px;
+}
+.callToAction h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.footer {
+  color: #FFFFFF;
+}
+.footer .sitemap {
+  border-top: 1px solid #FFFFFF;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .sitemap li {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 120%;
+}
+.footer .sitemap li:last-child {
+  margin-top: 8px;
+}
+.footer .footer-menu {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  border-top: 1px solid #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+.footer .footer-menu .copyright {
+  margin-right: 100px;
+}
+.footer .footer-menu .social {
+  margin-right: auto;
+}
+.footer .footer-menu .social ul {
+  display: flex;
+}
+.footer .footer-menu .social li {
+  margin-right: 20px;
+}
+.footer .footer-menu .top {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .footer .footer-menu .copyright,
+  .footer .footer-menu .top {
+    margin-right: 0;
+    width: 50%;
+  }
+  .footer .footer-menu .social {
+    width: 100%;
+    order: 3;
+  }
 }/*# sourceMappingURL=style.css.map */
